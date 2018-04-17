@@ -279,7 +279,13 @@ function longer(arr1, arr2){
 */
 
 function both(arr1, arr2){
-  
+  var newArr=[];
+  for(i=0;i<arr.length;i++){
+    if(arr1[i].indexOf(arr2[i])>=0){
+      newArr.push(arr1[i]);
+    }
+  }
+  return newArr;
 }
 
 
@@ -320,7 +326,12 @@ var colt = {
   After that console.log the length of the Array and make sure that it's equal to 4. 
 */
 
-//Code Here
+devMountainEmployees.push(tyler);
+devMountainEmployees.push(cahlan);
+devMountainEmployees.push(ryan);
+devMountainEmployees.push(colt);
+
+console.log(devMountainEmployees.length);
 
 
 
@@ -328,9 +339,15 @@ var colt = {
   Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
-
-//Code Here
-
+function findHimself(devMountainEmployees){
+  for (i=0;i<devMountainEmployees.length;i++){
+ // var findCahlan = devMountainEmployees[i].indexOf('cahlan');
+  if(devMountainEmployees[i]=== cahlan){
+    devMountainEmployees.splice(i,1);
+  }
+  }
+  return devMountainEmployees;
+}
 
 
 ////////// PROBLEM 13 //////////
