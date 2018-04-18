@@ -339,16 +339,23 @@ console.log(devMountainEmployees.length);
   Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
-function findHimself(devMountainEmployees){
-  for (i=0;i<devMountainEmployees.length;i++){
- // var findCahlan = devMountainEmployees[i].indexOf('cahlan');
-  if(devMountainEmployees[i]=== cahlan){
-    devMountainEmployees.splice(i,1);
-  }
-  }
-  return devMountainEmployees;
-}
+//console.log(devMountainEmployees);
 
+function findHimself(a){
+//  console.log('findHimself');
+  
+  for (i=0;i<a.length;i++){
+    
+    if(a[i].name === 'Cahlan'){
+      console.log(i);
+      console.log(a[i]);
+      a.splice(i,1);
+  }
+  }
+  //return a;
+}
+var b = findHimself(devMountainEmployees);
+//console.log(devMountainEmployees);
 
 ////////// PROBLEM 13 //////////
 
