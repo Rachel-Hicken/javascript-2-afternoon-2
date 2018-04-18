@@ -261,12 +261,15 @@ for(var i = 0; i < num2; i++){
   Return the array which is longest.
 */
 
-function longer(arr1, arr2){
-  if(arr1>arr2){
-    return arr1;
-  }
-  return arr2;
-}
+
+
+
+// function longer(arr1, arr2){
+//   if(arr1>arr2){
+//     return arr1;
+//   }
+//   return arr2;
+// }
 
 
 
@@ -278,16 +281,31 @@ function longer(arr1, arr2){
   Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
-function both(arr1, arr2){
-  var newArr=[];
-  for(i=0;i<arr.length;i++){
-    if(arr1[i].indexOf(arr2[i])>=0){
-      newArr.push(arr1[i]);
-    }
-  }
-  return newArr;
-}
+// function both(arr1, arr2){
+//   var newArr=[];
+//   for(i=0;i<arr.length;i++){
+//     if(arr1[i].indexOf(arr2[i])>=0){
+//       newArr.push(arr1[i]);
+//     }
+//   }
+//   return newArr;
+// }
 
+
+// function both(arr1, arr2){
+//   var newArr=[];
+//   for(i=0;i<arr1.length;i++)
+//   {
+//        for(j=0;j<arr2.length;i++)
+//        {
+//            if(arr1[i]===arr2[j])
+//            {
+//              newArr.push(arr1[i]);
+//            }
+//         }
+//   }
+//   return newArr;
+// }
 
 
 ////////// PROBLEM 12 //////////
